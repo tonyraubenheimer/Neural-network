@@ -10,7 +10,7 @@ from scipy.stats import truncnorm
 #Main.py processes data from the MNIST database. It will create and train a neural network
 #and process images. 
 
-#1. Download mnist_train.csv and mnist_test.csv into a directory on your computer. Change the
+#1. Download mnist_train.csv (https://www.python-course.eu/data/mnist/mnist_train.csv) and mnist_test.csv (https://www.python-course.eu/data/mnist/mnist_test.csv) into a directory on your computer. Change the
 #data_path global variable in Main.py to the path of that directory. 
 #2. Run processData() in the main() method in Main.py to process the greyscaled images. Raw pixel values range from 
 #0 to 255; processData() converts them to values in the range [0.01, 1]. ProcessData() also 
