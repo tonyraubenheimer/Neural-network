@@ -111,8 +111,6 @@ class NeuralNetwork:
             
             #create weight matrix W and add to network's array of weight matrices
             tn = truncated_normal()
-            ###################################################
-            ###################################################
             #W = [np.random.randn(y, x)/np.sqrt(x) 
                         #for x, y in zip(self.sizes[:-1], self.sizes[1:])]
             W = tn.rvs(n).reshape((nodes_out, nodes_in+1)) 
@@ -162,11 +160,11 @@ class NeuralNetwork:
         
         #δ_L = ∇C_wrt_a ⊙ σ′(z_L)
               
-        #cross-entropy cost #.957
+        #cross-entropy cost 
         #cost function chosen such that σ′(z_L) term cancels
         delta_vector_L = (activation_vector_L - y)
         
-        #quadratic cost .918
+        #quadratic cost 
         #delta_vector_L = (activation_vector_L - y) * sigmoid_derivative(z_vector_L)
         
         delta_vectors = [[] for _ in range(L)] #these will get populated in reverse order
